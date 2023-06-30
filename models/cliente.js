@@ -1,6 +1,6 @@
 // TODO: Crear modelo de datos de Reserva
 // Importar Sequelize y configurar la conexión a la base de datos
-const { sequelize, DataTypes } = require("");
+const { sequelize, DataTypes } = require("../database");
 
 // Definir el modelo "Cliente"
 const Cliente = sequelize.define(

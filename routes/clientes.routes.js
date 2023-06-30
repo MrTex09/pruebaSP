@@ -4,7 +4,7 @@ const { crearCliente } = require("../controllers/cliente_controllers");
 // Obtener todas las cliente
 
 // Obtener todas las clientes
-router.get("/api/");
+router.get("/");
 
 // Crear una reserva
 router.post("/api/crearCliente", crearCliente);
