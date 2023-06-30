@@ -1,6 +1,7 @@
 // TODO: Crear modelo de datos de Reserva
 // Importar Sequelize y configurar la conexión a la base de datos
 const { sequelize, DataTypes } = require("../database");
+const Cliente = require("./cliente");
 
 // Definir el modelo "Reserva"
 const Reserva = sequelize.define(
@@ -41,11 +42,7 @@ const Reserva = sequelize.define(
 );
 
 // Crear tabla si no existe
-reserva.sync();
-
-// Establecer la relación entre Cliente y Reserva
-Usuario.hasMany(Reserva, { foreignKey: "cliente_id" });
-Reserva.belongsTo(Cliente, { foreignKey: "cliente_id" });
+Reserva.sync();
 
 // Sincronizar los modelos con la base de datos
 sequelize
