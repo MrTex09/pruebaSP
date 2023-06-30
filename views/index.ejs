@@ -1,30 +1,54 @@
 <%- include('partials/header') %>
 
-    <div class="container">
 
+
+    <div class="container">
         <div class="row mt-5">
-            <h1 class="text-center border-botton">Lista de Reservas</h1>
-            <div class="col">
-                <div class="col-md-3 mb-2">
-                    <a href="/reserva/crear" class="btn btn sm btn-primary" id>Nuevo </a>
-                    <a href="/" class="btn btn-info text-light">Inicio</a>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <a href="/tareas" class="btn btn-sm btn-primary">Regresar</a>
+                    <a href="/" class="btn btn-sm btn-info text-light">Inicio</a>
                 </div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Columna 1</th>
-                            <th>Columna 2</th>
-                            <th>Columna 3</th>
-                            <th>Columna n</th>
-                        </tr>
-                    </thead>
-                    <tbody id="">
-          
-                    </tbody>
-                </table>
             </div>
         </div>
+        
+        <div class="mx-auto col-sm-9 col-md-6 col-lg-5 col-xl-4 p-2 border rounded p-3">
+            <h1 class="text-center px-2 bg-primary text-light rounded">Nuevo cliente</h1>
+            <form action="#" id="formNuevocliente">
+                <div class="form-group mb-3">
+                    <label for="cliente">Cliente</label>
+                    <input type="text" name="cliente" id="cliente" class="form-control" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="correo_electronico">Correo</label>
+                    <input type="correo_electronico" name="    correo_electronico" id="correo_electronico" class="form-control" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="apellido">apellido</label>
+                    <input type="apellido" name="apellido" id="apellido" class="form-control" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="nombre">nombre</label>
+                    <input type="nombre" name="nombre" id="nombre" class="form-control" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="telefono">numero de telefono</label>
+                    <input type="nombre" name="telefono" id="telefono" class="form-control" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="direccion ">numero de direccion </label>
+                    <input type="nombre" name="direccion " id="direccion " class="form-control" />
+                </div>
+                <div class="form-group mb-3">
+                    <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
     </div>
 
 
-    <%- include('partials/footer') %>
+    <script src="/models/cliente.js"></script>
+
+    <%- include('../partials/footer') %>
